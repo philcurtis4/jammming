@@ -1,7 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import searchBar from './searchbar';
 
 function App() {
+  
+
   return (
     <div>
       <div id="Title">
@@ -13,19 +16,21 @@ function App() {
       </div>
 
       <div class="body">
-      <div id="cover">
-        <form method="get" action="">
-          <div class="tb">
-            <div class="td"><input type="text" placeholder="Search" required/></div>
-              <div class="td" id="s-cover">
-                <button type="submit">
-                <div id="s-circle"></div>
-                <span></span>
-                </button>
-              </div>
+        <searchBar />
+
+        <div id="resultsBox">
+          <div id="resultsContainer">
+            <h2>Results</h2>
           </div>
-        </form>
-      </div>
+        </div>
+
+        <div>
+          <div id="playlistContainer">
+            <h2>Playlist</h2>
+          </div>
+        </div>
+
+
           
       </div>
         
@@ -35,6 +40,6 @@ function App() {
 
     
   );
-}
+};
 
 export default App;
